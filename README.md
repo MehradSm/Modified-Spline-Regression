@@ -1,1 +1,1 @@
-# Modified-Spline-Regression-
+# Modified Spline Regression
