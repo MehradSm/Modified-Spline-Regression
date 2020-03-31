@@ -80,9 +80,10 @@ subplot(2,2,4);plot(1:lastknot,ytrue,1:lastknot,yhat_hist_mc,1:lastknot,yhat_his
 xlabel('Lag (ms)');grid
 ylabel('Intensity');title('modified spline')
 legend('True','Model fit','Error bounds');
+
 %% Goodness-of-Fit
 
-% 1. Confidence Bound
+% Confidence Bound
 % Compute SRR which is square root ratio of the confidence
 % interval width at the end point over the average of 
 % confidence interval width in the interior regions.
@@ -94,10 +95,3 @@ srr_hist_c = sqrt([(yhi_hist_c(1) + ylo_hist_c(1))/avg_midl_c  (yhi_hist_c(end) 
 srr_hist_mc =  sqrt([(yhi_hist_mc(1) + ylo_hist_mc(1))/avg_midl_mc  (yhi_hist_mc(end) + ylo_hist_mc(end))/avg_midl_mc]);
 srr_hist_i =  [yhi_hist_i(1) + ylo_hist_i(1)  yhi_hist_i(end) + ylo_hist_i(end)];
 
-% 2. AIC 
-% Compute the difference in AIC using different basis functions
-dAIC_mc_c = (dev_hist_mc + 2*length(b_hist_mc)) - (dev_hist_c + 2*length(b_hist_c))
-dAIC_mc_rc = (dev_hist_mc + 2*length(b_hist_mc)) - (dev_hist_rc + 2*length(b_hist_rc)) 
-dAIC_c_rc = (dev_hist_c + 2*length(b_hist_c)) - (dev_hist_rc + 2*length(b_hist_rc)) 
-dAIC_mc_i = (dev_hist_mc + 2*length(b_hist_mc)) - (dev_hist_i + 2*length(b_hist_i)) 
-dAIC_c_i = (dev_hist_c + 2*length(b_hist_c)) - (dev_hist_i + 2*length(b_hist_i)) 
