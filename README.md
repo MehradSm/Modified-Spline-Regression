@@ -20,3 +20,11 @@ To run the model, you should clone all the files and run [main.m](https://github
 The following figure shows point process GLM fit using four different basis function on the simulated data. 
 
 ![](https://github.com/MehradSm/Modified-Spline-Regression/blob/master/Bases.png)
+
+And the following table represent the square root ratio (SRR) of the confidence interval width at the end point over the average of confidence interval width in the interior regions for four different bases. 
+
+First Header | Indicator | Raised Cosine | Cardinsl Spline | Modified Cardinal Spline
+----------   | --------- | ------------- | --------------- | ------------------------- 
+SRR-start | 0.0063 | 1.355 | 2.364 | 1.244 
+SRR-end | 0.014 | 0.831 | 1.598 | 0.970 
+          
