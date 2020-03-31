@@ -1,4 +1,4 @@
-function [bases,phi] = RaisedCosHist(t,a,b,nbases,cntrspace)
+function [bases,phi] = RaisedCos(t,a,b,nbases,cntrspace)
 
 
 input_cos = a*log(t + b);
