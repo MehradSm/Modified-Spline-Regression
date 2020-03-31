@@ -9,6 +9,4 @@ Here we provide our MATLAB code for a simulated neural spiking data.
 The code is divided to three categoris:
 
 1. The [main.m](https://github.com/MehradSm/Modified-Spline-Regression/blob/master/main.m) MATLAB file contains the main framework to run the experiment. 
-2. 
-
-The []
+2. The [SimulateSpike.m] ()
