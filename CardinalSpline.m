@@ -1,4 +1,4 @@
-function [HistSpl] = TCdSplHist(lag,c_pt,s)
+function [HistSpl] = CardinalSpline(lag,c_pt,s)
 
 HistSpl = zeros(lag,length(c_pt));
 
