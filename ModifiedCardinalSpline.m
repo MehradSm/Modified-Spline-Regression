@@ -1,4 +1,4 @@
-function [HistSpl] = CdSplHist(lag,c_pt,s)
+function [HistSpl] = ModifiedCardinalSpline(lag,c_pt,s)
 
 HistSpl = zeros(lag,length(c_pt));
 
