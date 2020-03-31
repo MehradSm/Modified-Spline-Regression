@@ -19,4 +19,4 @@ To run the model, you should clone all the files and run [main.m](https://github
 
 The following figure shows point process GLM fit using four different basis function on the simulated data. 
 
-Format: ![Alt Text](url)
+![](https://github.com/MehradSm/Modified-Spline-Regression/blob/master/Bases.png)
