@@ -2,6 +2,7 @@ function [HistSpl] = CardinalSpline(lag,c_pt,s)
 
 HistSpl = zeros(lag,length(c_pt));
 
+%for each 1 ms timepoint, calculate the corresponding row of the glm input matrix
 for i=1:lag
     nearest_c_pt_index = max(find(c_pt<i));
     nearest_c_pt_time = c_pt(nearest_c_pt_index);
