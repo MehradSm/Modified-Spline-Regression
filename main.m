@@ -94,4 +94,3 @@ srr_hist_rc =  sqrt([(yhi_hist_rc(1) + ylo_hist_rc(1))/avg_midl_rc  (yhi_hist_rc
 srr_hist_c = sqrt([(yhi_hist_c(1) + ylo_hist_c(1))/avg_midl_c  (yhi_hist_c(end) + ylo_hist_c(end))/avg_midl_c]);
 srr_hist_mc =  sqrt([(yhi_hist_mc(1) + ylo_hist_mc(1))/avg_midl_mc  (yhi_hist_mc(end) + ylo_hist_mc(end))/avg_midl_mc]);
 srr_hist_i =  [yhi_hist_i(1) + ylo_hist_i(1)  yhi_hist_i(end) + ylo_hist_i(end)];
-
