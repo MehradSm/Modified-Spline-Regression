@@ -9,9 +9,9 @@ close all;clear;clc;
 lastknot = 200;lag=200;
 c_pt_c = [-10 0 10 20 40 100 201 210]; % Define control points
 s = 0.5;  % Define Tension Parameter
-
 % Construct Spline Matrix
 HistSpl_c = CardinalSpline(lastknot,c_pt_c,s);
+
 % Simulate spiking activity
 nsteps = 25000; % Define number of time steps 
 theta = [-5 4 -2 .1 .5 .1 0.1 0.2 3];
