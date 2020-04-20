@@ -9,14 +9,14 @@ close all;clear;clc;
 lastknot = 200;lag=200;
 c_pt_c = [-10 0 10 20 40 100 201 210]; % Define control points
 s = 0.5;  % Define Tension Parameter
+
 % Construct Spline Matrix
 HistSpl_c = CardinalSpline(lastknot,c_pt_c,s);
 % Simulate spiking activity
 nsteps = 25000; % Define number of time steps 
 theta = [-5 4 -2 .1 .5 .1 0.1 0.2 3];
 [spiketrain,ytrue] = SimulateSpike(HistSpl_c,theta,lastknot,nsteps);
-spike = spiketrain;
-sum(spike)
+
 % Build design matrix for multiplicative history model
 Hist = Hist(lastknot,spiketrain);
 mtx_hist_c = Hist*HistSpl_c;
@@ -43,8 +43,6 @@ b = 15;a =4;nbases = 6;cntrspace = pi/2;
 t=1:lag;
 % Construct Raised Cosine Matrix
 [bases_hist,phi] = RaisedCos(t,a,b,nbases,cntrspace);
-% figure;
-% plot(t,bases_hist);
 % Build design matrix for multiplicative history model
 mtx_hist_rc = Hist*bases_hist;
 % Fit point process GLM
@@ -80,9 +78,10 @@ subplot(2,2,4);plot(1:lastknot,ytrue,1:lastknot,yhat_hist_mc,1:lastknot,yhat_his
 xlabel('Lag (ms)');grid
 ylabel('Intensity');title('modified spline')
 legend('True','Model fit','Error bounds');
+
 %% Goodness-of-Fit
 
-% 1. Confidence Bound
+%Confidence Bound
 % Compute SRR which is square root ratio of the confidence
 % interval width at the end point over the average of 
 % confidence interval width in the interior regions.
@@ -93,11 +92,3 @@ srr_hist_rc =  sqrt([(yhi_hist_rc(1) + ylo_hist_rc(1))/avg_midl_rc  (yhi_hist_rc
 srr_hist_c = sqrt([(yhi_hist_c(1) + ylo_hist_c(1))/avg_midl_c  (yhi_hist_c(end) + ylo_hist_c(end))/avg_midl_c]);
 srr_hist_mc =  sqrt([(yhi_hist_mc(1) + ylo_hist_mc(1))/avg_midl_mc  (yhi_hist_mc(end) + ylo_hist_mc(end))/avg_midl_mc]);
 srr_hist_i =  [yhi_hist_i(1) + ylo_hist_i(1)  yhi_hist_i(end) + ylo_hist_i(end)];
-
-% 2. AIC 
-% Compute the difference in AIC using different basis functions
-dAIC_mc_c = (dev_hist_mc + 2*length(b_hist_mc)) - (dev_hist_c + 2*length(b_hist_c))
-dAIC_mc_rc = (dev_hist_mc + 2*length(b_hist_mc)) - (dev_hist_rc + 2*length(b_hist_rc)) 
-dAIC_c_rc = (dev_hist_c + 2*length(b_hist_c)) - (dev_hist_rc + 2*length(b_hist_rc)) 
-dAIC_mc_i = (dev_hist_mc + 2*length(b_hist_mc)) - (dev_hist_i + 2*length(b_hist_i)) 
-dAIC_c_i = (dev_hist_c + 2*length(b_hist_c)) - (dev_hist_i + 2*length(b_hist_i)) 
