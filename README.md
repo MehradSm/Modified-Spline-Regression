@@ -21,7 +21,7 @@ The following figure shows point process GLM fit using four different basis func
 
 ![](https://github.com/MehradSm/Modified-Spline-Regression/blob/master/Bases.png)
 
-And the following table represent the square root ratio (SRR) of the confidence interval width at the end point over the average of confidence interval width in the interior regions for four different bases. 
+And the following table represent the square root ratio (SRR) of the confidence interval width at the end points over the average of confidence interval width in the interior regions for four different bases. 
 
 First Header | Indicator | Raised Cosine | Cardinsl Spline | Modified Cardinal Spline
 ----------   | --------- | ------------- | --------------- | ------------------------- 
