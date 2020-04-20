@@ -1,6 +1,5 @@
 function [bases,phi] = RaisedCos(t,a,b,nbases,cntrspace)
 
-
 input_cos = a*log(t + b);
 phi_srt = min(input_cos);
 phi_end = max(input_cos);
@@ -14,4 +13,3 @@ for i = 1:nbases
 end
 
 end
-
