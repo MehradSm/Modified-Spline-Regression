@@ -21,10 +21,10 @@ The following figure shows point process GLM fit using four different basis func
 
 ![](https://github.com/MehradSm/Modified-Spline-Regression/blob/master/Bases.png)
 
-And the following table represent the square root ratio (SRR) of the confidence interval width at the end points over the average of confidence interval width in the interior regions for four different bases. 
+In order to quantify the effect of the choice of basis function on the size of the confidence bounds, we computed a confidence interval width ratio (CIWR) of the confidence interval width at the end points over the average of confidence interval width in the interior regions for four different bases. 
 
 First Header | Indicator | Raised Cosine | Cardinsl Spline | Modified Cardinal Spline
 ----------   | --------- | ------------- | --------------- | ------------------------- 
-SRR-start | 0.0063 | 1.355 | 2.364 | 1.244 
-SRR-end | 0.014 | 0.831 | 1.598 | 0.970 
+CIWR_start | 3.97E-5 | 1.836 | 5.589 | 1.477 
+CIWR_end | 1.96E-4 | 0.691 | 2.553 | 0.941 
           
