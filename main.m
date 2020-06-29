@@ -4,7 +4,7 @@
 close all;clear;clc; 
 %% Basis Functions
 
-% 1. Cadinal Spline
+% 1. Cardinal Spline
 % Define spline parameters
 lastknot = 200;lag=200;
 c_pt_c = [-10 0 10 20 40 100 201 210]; % Define control points
