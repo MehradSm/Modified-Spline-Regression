@@ -19,7 +19,7 @@ To run the model, you should clone all the files and run [main.m](https://github
 
 The following figure shows point process GLM fit using four different basis function on the simulated data. 
 
-![](https://github.com/MehradSm/Modified-Spline-Regression/blob/master/Bases.png)
+![](https://github.com/MehradSm/Modified-Spline-Regression/blob/master/BasisFunctions.png)
 
 In order to quantify the effect of the choice of basis function on the size of the confidence bounds, we computed a confidence interval width ratio (CIWR) of the confidence interval width at the end points over the average of confidence interval width in the interior regions for four different bases. 
 
