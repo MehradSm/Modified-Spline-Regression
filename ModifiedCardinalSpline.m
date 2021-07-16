@@ -22,7 +22,7 @@ for i=1:lag
     else
            privious_c_pt = c_pt(nearest_c_pt_index-1);
            next2 = c_pt(nearest_c_pt_index+2);
-           l1 = next_c_pt_time - privoius_c_pt;
+           l1 = next_c_pt_time - privious_c_pt;
            l2 = next2 - nearest_c_pt_time;
            p=[u^3 u^2 u 1]*[-s/l1 2-(s/l2) (s/l1)-2 s/l2;2*s/l1 (s/l2)-3 3-2*(s/l1) -s/l2;-s/l1 0 s/l1 0;0 1 0 0];
            HistSpl(i,nearest_c_pt_index-1:nearest_c_pt_index+2) = p; 
