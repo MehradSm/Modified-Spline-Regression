@@ -25,6 +25,6 @@ In order to quantify the effect of the choice of basis function on the size of t
 
 First Header | Indicator | Raised Cosine | Cardinsl Spline | Modified Cardinal Spline
 ----------   | --------- | ------------- | --------------- | ------------------------- 
-CIWR_start | 3.97E-5 | 1.836 | 5.589 | 1.477 
-CIWR_end | 1.96E-4 | 0.691 | 2.553 | 0.941 
+CIWR_start | 0.0047 | 1.183 | 20.152 | 1.119 
+CIWR_end | 0.0104 | 0.641 | 2.682 | 1.264 
           
