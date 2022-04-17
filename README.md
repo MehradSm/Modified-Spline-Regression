@@ -1,6 +1,6 @@
 # Modified Spline Regression
 
-This is the repository for our paper titled "Modified Spline Regression for Neual Spiking Data" available on [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258321). 
+This is the repository for our paper titled "Modified Spline Regression for Neual Spiking Data" available on [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258321) journal. 
 Here we provide our MATLAB code for a simulated neural spiking data. 
 
 ## Data
