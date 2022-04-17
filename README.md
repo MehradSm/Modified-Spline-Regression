@@ -4,7 +4,7 @@ This is the repository for our paper titled "Modified Spline Regression for Neua
 Here we provide our MATLAB code for a simulated neural spiking data. 
 
 
-# Code
+### Code
 
 The code is divided to four categoreis:
 
@@ -15,7 +15,7 @@ The code is divided to four categoreis:
 
 To run the model, you should clone all the files and run [main.m](https://github.com/MehradSm/Modified-Spline-Regression/blob/master/main.m) file. 
 
-# Results 
+### Results 
 
 The following figure shows point process GLM fit using four different basis function on the simulated data. 
 
