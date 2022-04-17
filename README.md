@@ -1,13 +1,10 @@
-# Modified Spline Regression
+## Modified Spline Regression
 
 This is the repository for our paper titled "Modified Spline Regression for Neual Spiking Data" available on [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258321) journal. 
 Here we provide our MATLAB code for a simulated neural spiking data. 
 
-## Data
-The data is available publicly on [CRCNS](http://dx.doi.org/10.6080/K02N50G9) data sharing page. 
 
-
-## Code
+# Code
 
 The code is divided to four categoreis:
 
@@ -18,7 +15,7 @@ The code is divided to four categoreis:
 
 To run the model, you should clone all the files and run [main.m](https://github.com/MehradSm/Modified-Spline-Regression/blob/master/main.m) file. 
 
-## Results 
+# Results 
 
 The following figure shows point process GLM fit using four different basis function on the simulated data. 
 
